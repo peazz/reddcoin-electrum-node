@@ -53,7 +53,7 @@ class Wallet {
         hkey             = new HierarchicalKey(rootXprv).derive(rootDerivation),
         masterPublicKey  = hkey.extendedPublicKeyString(),
         masterPrivateKey = hkey.extendedPrivateKeyString();
-                                                                                                                     @formatter:on
+        
     this.masterPublicKey = masterPublicKey;
     this.masterPrivateKey = masterPrivateKey;
 

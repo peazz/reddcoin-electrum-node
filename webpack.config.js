@@ -4,6 +4,7 @@ var webpack = require('webpack');
 // webpack.config.js
 module.exports = {
   entry: './src/index.js',
+  target: 'node',
   output: {
     filename: 'app.js',
     path: path.resolve(__dirname, 'dist')
@@ -17,10 +18,6 @@ module.exports = {
       test: [/\.js$/,/\.jsx$/],
       exclude: ['/node_modules/']
     }]
-  },
-  resolve: {
-    root: path.resolve('./node_modules'),
-    extensions: ['', '.js']
   },
   plugins: []
 };
